@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfohednptbl3k"]
+
+[ext_resource type="Script" uid="uid://0lygfif7gvty" path="res://ship.gd" id="1_4cq66"]
+[ext_resource type="PackedScene" uid="uid://dqi610vbhm683" path="res://thruster.tscn" id="2_4cq66"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwb40"]
+size = Vector2(16, 64)
+
+[node name="Ship" type="RigidBody2D"]
+script = ExtResource("1_4cq66")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -8.0
+offset_top = -32.0
+offset_right = 8.0
+offset_bottom = 32.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_mwb40")
+
+[node name="ThrusterUp" parent="." instance=ExtResource("2_4cq66")]
+position = Vector2(0, 32)
+action = "up"
+
+[node name="ThrusterDown" parent="." instance=ExtResource("2_4cq66")]
+position = Vector2(0, -32)
+rotation = 3.14159
+action = "down"
+
+[node name="ThrusterLeft" parent="." instance=ExtResource("2_4cq66")]
+position = Vector2(-8, 24)
+rotation = 1.57079
+action = "right"
+
+[node name="ThrusterRight" parent="." instance=ExtResource("2_4cq66")]
+position = Vector2(8, 24)
+rotation = -1.57079
+action = "left"
