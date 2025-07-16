@@ -18,6 +18,8 @@ func _ready() -> void:
 	$GPUParticles2D.emitting = false
 
 func _process(_delta: float) -> void:
+	if action == "":
+		return
 	if Input.is_action_just_pressed(action):
 		enabled = true
 	elif Input.is_action_just_released(action):
