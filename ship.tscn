@@ -28,20 +28,22 @@ position = Vector2(0, -32)
 rotation = 3.14159
 action = "down"
 
-[node name="ThrusterLeft" parent="." instance=ExtResource("2_4cq66")]
+[node name="ThrusterRight" parent="." instance=ExtResource("2_4cq66")]
 position = Vector2(-8, 24)
 rotation = 1.57079
 action = "right"
 
-[node name="ThrusterLeft2" parent="." instance=ExtResource("2_4cq66")]
+[node name="ThrusterRight2" parent="." instance=ExtResource("2_4cq66")]
 position = Vector2(8, -24)
 rotation = -1.5708
-action = "left"
+action = "right"
 
-[node name="ThrusterRight" parent="." instance=ExtResource("2_4cq66")]
+[node name="ThrusterLeft" parent="." instance=ExtResource("2_4cq66")]
 position = Vector2(8, 24)
 rotation = -1.57079
+action = "left"
 
-[node name="ThrusterRight2" parent="." instance=ExtResource("2_4cq66")]
+[node name="ThrusterLeft2" parent="." instance=ExtResource("2_4cq66")]
 position = Vector2(-8, -24)
 rotation = -4.71238
+action = "left"

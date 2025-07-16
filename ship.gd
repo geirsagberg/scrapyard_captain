@@ -19,5 +19,4 @@ func _physics_process(delta: float) -> void:
 		var magnitude = 2000 * delta
 		var force = direction * magnitude
 		var force_origin = thruster.position.rotated(rotation)
-		print("Applying force: ", force, " at position: ", force_origin)
 		apply_force(force, force_origin)
