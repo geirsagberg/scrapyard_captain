@@ -19,31 +19,21 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_mwb40")
 
-[node name="ThrusterUp" parent="." instance=ExtResource("2_4cq66")]
+[node name="ThrusterB" parent="." instance=ExtResource("2_4cq66")]
 position = Vector2(0, 32)
 action = "up"
 
-[node name="ThrusterDown" parent="." instance=ExtResource("2_4cq66")]
+[node name="ThrusterT" parent="." instance=ExtResource("2_4cq66")]
 position = Vector2(0, -32)
 rotation = 3.14159
 action = "down"
 
-[node name="ThrusterRight" parent="." instance=ExtResource("2_4cq66")]
-position = Vector2(-8, 24)
+[node name="ThrusterBL" parent="." instance=ExtResource("2_4cq66")]
+position = Vector2(-8, 28)
 rotation = 1.57079
-action = "right"
+action = "left"
 
-[node name="ThrusterRight2" parent="." instance=ExtResource("2_4cq66")]
-position = Vector2(8, -24)
-rotation = -1.5708
-action = "right"
-
-[node name="ThrusterLeft" parent="." instance=ExtResource("2_4cq66")]
-position = Vector2(8, 24)
+[node name="ThrusterBR" parent="." instance=ExtResource("2_4cq66")]
+position = Vector2(8, 28)
 rotation = -1.57079
-action = "left"
-
-[node name="ThrusterLeft2" parent="." instance=ExtResource("2_4cq66")]
-position = Vector2(-8, -24)
-rotation = -4.71238
-action = "left"
+action = "right"
